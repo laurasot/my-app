@@ -11,7 +11,7 @@ function App() {
     setError(null); // Reseteamos el error
     try {
       // Hacemos la consulta a la API
-      const response = await axios.get('http://localhost/tour/buscartodos');
+      const response = await axios.get('http://localhost:8080/tour/buscartodos');
       setData(response.data); // Guardamos los datos obtenidos
     } catch (err) {
       setError("Error al obtener los datos."); // Si ocurre un error, lo mostramos
